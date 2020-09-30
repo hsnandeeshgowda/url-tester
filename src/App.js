@@ -40,6 +40,8 @@ function App() {
 
         result = await response.json();
         responseHandler( response, startTime, endTime, result, false)
+      }else{
+        responseHandler( response, startTime, endTime, "Provide a valid url", false)
       }
     
     } catch (error) {
